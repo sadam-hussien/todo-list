@@ -1,0 +1,37 @@
+.todo-list-options {
+    font-size: .9rem;
+    color: $dark-grayish-blue;
+    cursor: auto !important;
+
+    button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        color: $dark-grayish-blue;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            color: $very-dark-grayish-blue;
+        }
+    }
+
+    .todo-list-options-btns {
+        button {
+            text-transform: capitalize;
+            &:not(:last-of-type) {
+                margin-right: $medium;
+            }
+            &.active {
+                color: $bright-blue;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .clear-completed {
+            display: none;
+        }
+    }
+}

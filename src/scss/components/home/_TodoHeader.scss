@@ -1,0 +1,28 @@
+// stat header
+header.todo-header {
+    margin-bottom: $large;
+
+    // start logo
+    .todo-logo {
+        .logo-text {
+            letter-spacing: 10px;
+            color: $light-gray;
+            margin: 0;
+        }
+    }
+    // === end logo
+
+    // start toggle-theme
+    .toggle-theme {
+        .toggle-theme-btn {
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            
+        }
+    }
+    // ==== end toggle-theme
+
+}
+// ==== end header

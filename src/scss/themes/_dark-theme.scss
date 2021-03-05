@@ -1,0 +1,71 @@
+.dark-theme {
+
+    // bg
+    .bg {
+        background-image: url(../../images/bg-desktop-dark.jpg);
+
+        @media (max-width: 576px) {
+            background-image: url(../../images/bg-mobile-dark.jpg);
+        }
+
+        &::before {
+            background: $dark-blue;
+        }
+    }
+
+    // header
+    .home-page header.todo-header .todo-logo .logo-text {
+        // color: $dark-Light-grayish-blue;
+    }
+
+    // todo form
+    .home-page .todo-form .todo-form-add .form-control {
+        background: $very-dark-blue;
+        color: $dark-Light-grayish-blue;
+
+        &::placeholder {
+            color: $dark-grayish-blue;
+        }
+    }
+
+    .home-page .todo-form .todo-form-add label {
+        border-color: $dark-grayish-blue;
+
+        &::after {
+            background: $very-dark-blue;
+        }
+    }
+
+    // todo list
+    .home-page .todo-list ul {
+        background: $very-dark-blue;
+        box-shadow: 0 0 10px rgba($very-dark-grayish-blue-two, .6);
+    }
+    .home-page .todo-list ul .todo-list-item:not(:last-of-type) {
+        border-bottom-color: $very-dark-grayish-blue-two;
+    }
+
+    .home-page .todo-list ul .todo-list-item .todo-list-item-info .todo-list-item-info-text .text {
+        color: $dark-Light-grayish-blue;
+    }
+
+    .home-page .todo-list ul .todo-list-item .todo-list-item-info .todo-list-item-info-text .text.completed-todo {
+        color: $dark-grayish-blue;
+    }
+
+    .home-page .todo-list ul .todo-list-item .todo-list-item-info .check-box label {
+        background: $very-dark-blue;
+    }
+
+    .home-page .todo-list ul .todo-list-item .todo-list-item-info .check-box label::after {
+        background: $very-dark-blue;
+        border-color: $very-dark-blue;
+    }
+
+    .home-page .todo-list-options button {
+        &:hover {
+            color: $dark-Light-grayish-blue;
+        }
+    }
+
+}

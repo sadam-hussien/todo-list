@@ -1,0 +1,39 @@
+.todo-list-item-edit {
+    form, div {
+        width: 100%;
+    }
+    label {
+
+        width: $el-height;
+        height: $el-height;
+        margin-right: $medium;
+        img {
+            opacity: .6;
+        }
+    }
+
+    input {
+        height: auto;
+        margin-bottom: -3px;
+        background: transparent;
+        border-bottom: 1px solid $bright-blue;
+        color: $bright-blue;
+        border-radius: 0;
+        padding: $small 0;
+    }
+
+    button[type=submit] {
+        position: absolute;
+        top: 3px;
+        right: $medium;
+        background: $background-gradient;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        width: $el-height - 3px;
+        height: $el-height - 3px;
+        cursor: pointer;
+
+
+    }
+}

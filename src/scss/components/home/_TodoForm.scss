@@ -1,0 +1,54 @@
+// start todo-form
+.todo-form {
+    margin-bottom: $medium;
+    .todo-form-add {
+
+        .form-group {
+            position: relative;
+        }
+
+        label {
+            width: $el-height;
+            height: $el-height;
+            border-radius: 50%;
+            border: 1px solid $light-grayish-blue;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: $medium;
+            transform: translateY(-50%);
+            transition: all .5s;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: $white;
+                z-index: 1;
+                transition: all .5s;
+                opacity: 1;
+            }
+        }
+
+        .form-control {
+            box-shadow: 0 0 10px rgba($very-dark-grayish-blue, .6);
+            padding: $small $medium $small $medium + $el-height + $medium;
+
+            &:focus {
+                & ~ label {
+                    &::after {
+                        opacity: 0;
+                    }
+                    background: $background-gradient;
+                }
+            }
+        }
+
+    }
+}
+// ==== end todo-form

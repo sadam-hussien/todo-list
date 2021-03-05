@@ -1,0 +1,28 @@
+.home-page {
+
+    .content {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        @media (min-width: 577px) {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            width: 80%;
+        }
+        @media (min-width: 991px) {
+            width: 50%;
+        }
+    }
+
+    @import "./TodoHeader";
+
+    @import "./TodoForm";
+
+    @import "./TodoList";
+
+    @import "./TodoEdit";
+
+    @import "./TodoListOptions";
+    
+}
